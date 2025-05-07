@@ -16,3 +16,8 @@ void Player::win(){
 	std::cout << "You won!" << std::endl;
 	std::cout << "Your total: " << money << std::endl;
 }
+
+int const Player::total()
+{
+	return money;
+}
