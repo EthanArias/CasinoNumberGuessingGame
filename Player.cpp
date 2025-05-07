@@ -11,6 +11,8 @@ int Player::prompt(){
 	return guess;
 }
 
-void Player::win(int n){
-	money += n;
+void Player::win(){
+	money+=10;
+	std::cout << "You won!" << std::endl;
+	std::cout << "Your total: " << money << std::endl;
 }

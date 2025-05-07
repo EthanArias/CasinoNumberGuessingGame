@@ -5,7 +5,7 @@ class Player
 public:
 	Player();
 	int prompt();
-	void win(int n);
+	void win();
 private:
 	int money;
 };
