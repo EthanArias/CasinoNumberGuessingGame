@@ -26,16 +26,17 @@ void GuessingGame::play(){
 		if (check(player.prompt())) {
 			player.win();
 			update();
+			std::cout << "congragulations! You just won $10." << std::endl;
 		}
 		else {
 			std::cout << "Wrong answer!" << std::endl;
 			std::cout << "Give up or try again?" << std::endl;
-			std::cout << "type 0 to give up. type any other answer to continue." << std::endl;
-			char a;
-			std::cin >> a;
-			if (a == '0') {
-				x = false;
-			};
+		};
+		std::cout << "type 0 to give up. type any other answer to continue." << std::endl;
+		char a;
+		std::cin >> a;
+		if (a == '0') {
+			x = false;
 		};
 	} while (x == true);
 	std::cout << "Your total: $" << player.total();
